@@ -43,6 +43,7 @@ class HomeBody extends StatelessWidget {
                   ),
                 )),
             ListView.builder(
+               //  scrollDirection: Axis.horizontal,
                   itemCount: liste_fonctions.length,
                   itemBuilder: (context, index) => fonction_card(
                     itemIndex: index,

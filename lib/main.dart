@@ -1,5 +1,6 @@
-import 'package:ereclamation_application_2/screens/Forgot_password.dart';
-import 'package:ereclamation_application_2/screens/home.dart';
+import 'package:ereclamation_application_2/screens/Application%20enseignant/acceuil.dart';
+import 'package:ereclamation_application_2/screens/Application%20etudiant/Forgot_password.dart';
+import 'package:ereclamation_application_2/screens/Application%20etudiant/home.dart';
 
 import 'package:flutter/material.dart';
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         
       ),
       debugShowCheckedModeBanner: false,
-      home:Home(),
+      home:AcceuilEnseignant(),
     );
   }
 } 
