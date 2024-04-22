@@ -1,6 +1,6 @@
-import 'package:ereclamation_application_2/screens/Application%20enseignant/acceuil.dart';
-import 'package:ereclamation_application_2/screens/Application%20etudiant/Forgot_password.dart';
-import 'package:ereclamation_application_2/screens/Application%20etudiant/home.dart';
+
+import 'package:ereclamation_application_2/widgets/Home_ens.dart';
+
 
 import 'package:flutter/material.dart';
 void main() {
@@ -16,11 +16,13 @@ class MyApp extends StatelessWidget {
   Widget build (BuildContext context){
     return  MaterialApp(
       theme: ThemeData(
-       // primaryColor:  Color.fromARGB(95, 20, 80, 243),
         
+       // primaryColor:  Color.fromARGB(95, 20, 80, 243),
+
       ),
       debugShowCheckedModeBanner: false,
-      home:AcceuilEnseignant(),
+      home:ensHomePage(),
+      
     );
   }
 } 

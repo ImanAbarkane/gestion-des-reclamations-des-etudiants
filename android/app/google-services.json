@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "69304945629",
+    "project_id": "rc13-15755",
+    "storage_bucket": "rc13-15755.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69304945629:android:841dd1f917053fce024434",
+        "android_client_info": {
+          "package_name": "com.example.ereclamation_application_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQvuKaxtBHSw1YdDXk3sj6YiKoM5RRqK8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
