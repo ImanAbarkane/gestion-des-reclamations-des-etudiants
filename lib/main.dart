@@ -1,4 +1,6 @@
-import 'package:ereclamation_application_2/screens/Application%20enseignant/acceuil.dart';
+import 'package:ereclamation_application_2/screens/Application%20enseignant/espace_enseignant.dart';
+import 'package:ereclamation_application_2/screens/admin/Etudiant_details.dart';
+import 'package:ereclamation_application_2/screens/admin/acceuil.dart';
 import 'package:ereclamation_application_2/screens/Application%20etudiant/Forgot_password.dart';
 import 'package:ereclamation_application_2/screens/Application%20etudiant/home.dart';
 
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
         
       ),
       debugShowCheckedModeBanner: false,
-      home:AcceuilEnseignant(),
+      home:Espace_Enseignant(),
     );
   }
 } 
