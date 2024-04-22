@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables, camel_case_types
 
 import 'package:flutter/material.dart';
 
@@ -120,7 +120,7 @@ class Etudiant_details extends StatelessWidget {
                                 SizedBox(
                                   width: 20,
                                 ),
-                                Icon(Icons.)
+                                Icon(Icons.home)
                               ],
                             ),
                           ),

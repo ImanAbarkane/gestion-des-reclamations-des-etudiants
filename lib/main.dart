@@ -1,8 +1,12 @@
+// ignore_for_file: prefer_const_constructors
+
+import 'package:ereclamation_application_2/models/cas_utilisation.dart';
 import 'package:ereclamation_application_2/screens/Application%20enseignant/espace_enseignant.dart';
 import 'package:ereclamation_application_2/screens/admin/Etudiant_details.dart';
 import 'package:ereclamation_application_2/screens/admin/acceuil.dart';
 import 'package:ereclamation_application_2/screens/Application%20etudiant/Forgot_password.dart';
 import 'package:ereclamation_application_2/screens/Application%20etudiant/home.dart';
+import 'package:ereclamation_application_2/screens/welcome.dart';
 
 import 'package:flutter/material.dart';
 void main() {
@@ -22,7 +26,7 @@ class MyApp extends StatelessWidget {
         
       ),
       debugShowCheckedModeBanner: false,
-      home:Espace_Enseignant(),
+      home:Welcome(),
     );
   }
 } 
