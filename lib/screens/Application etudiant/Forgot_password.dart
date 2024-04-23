@@ -84,7 +84,7 @@ class Forgot_password extends StatelessWidget {
                         ),
                         
                     ),
-                    style: TextStyle( color:  const Color.fromARGB(255, 175, 10, 10)),
+                    style: TextStyle( color:  Color.fromARGB(255, 1, 6, 48)),
                     cursorColor: Colors.white,
                   ),
 
