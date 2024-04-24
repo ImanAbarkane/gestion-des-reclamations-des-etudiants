@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "459829130197",
+    "project_id": "pfe-application-f6d63",
+    "storage_bucket": "pfe-application-f6d63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459829130197:android:5e4efd5518f55c20b3435c",
+        "android_client_info": {
+          "package_name": "com.example.ereclamation_application_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhs4r2YnMBxiJCw8KVp2Jhf8mOoyOXP88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
