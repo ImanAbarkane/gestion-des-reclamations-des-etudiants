@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:ereclamation_application_2/screens/Application%20etudiant/Forgot_password.dart';
+import 'package:ereclamation_application_2/screens/Forgot_Password2.dart';
 import 'package:ereclamation_application_2/screens/Welcome2.dart';
 import 'package:ereclamation_application_2/screens/welcome.dart';
 import 'package:flutter/material.dart';
@@ -180,7 +181,7 @@ class _SignInScreenState extends State<SignInEnseignant> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => Forgot_password()));
+                                      builder: (context) => ForgotPassword()));
                             },
                             child: Text(
                               'Forget password?',
