@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 
 class Etudiant {
@@ -6,9 +8,11 @@ class Etudiant {
   String prenom;
   String filliere;
   String email;
+  int cin;
 
   Etudiant({
     required this.apoge,
+    required this.cin,
     required this.nom,
     required this.prenom,
     required this.filliere,
@@ -19,6 +23,7 @@ class Etudiant {
 List<Etudiant> etudiants = [
   Etudiant(
     apoge: 12345,
+    cin:20023,
     nom: "abarkane",
     prenom: "iman",
     filliere: "Informatique",
@@ -26,6 +31,7 @@ List<Etudiant> etudiants = [
   ),
   Etudiant(
     apoge: 54321,
+    cin:20023,
     nom: "Smith",
     prenom: "fofo",
     filliere: "Génie civil",

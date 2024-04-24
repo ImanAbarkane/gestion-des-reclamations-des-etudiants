@@ -1,5 +1,6 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, non_constant_identifier_names, camel_case_types
 
+import 'package:ereclamation_application_2/screens/admin/Etudiant_details.dart';
 import 'package:flutter/material.dart';
 
 class AcceuilEnseignant extends StatelessWidget {
@@ -21,11 +22,6 @@ NavigationBar navigatorbar_fonction() {
   return NavigationBar(
     height: 70,
     destinations: [
-      /*NavigationDestination
-        (icon: Icon(Icons.home_outlined),
-        selectedIcon: Icon(Icons.home),
-         label: 'Home'
-         ),*/
       NavigationDestination(
           icon: Icon(Icons.check_circle_outline_outlined),
           selectedIcon: Icon(Icons.groups),
@@ -48,23 +44,60 @@ class Etudiant_card extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(10),
-      height: 70,
+      margin: EdgeInsets.all(30),
+      height: 60,
       decoration: BoxDecoration(
           color: Colors.blueAccent, borderRadius: BorderRadius.circular(9)),
       child: Row(
         children: [
-          GestureDetector(
-                            child: Text(
-                              "Iman Abarkane",
-                               style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                               fontSize: 15, 
-                               color: Color.fromARGB(255, 200, 218, 250))
-                              ),
-                             onTap: (){ }, 
-                          ),
-          Expanded(
+          SizedBox(
+            width: 10,
+          ),
+          Icon(Icons.person),
+          SizedBox(
+            width: 20,
+          ),
+          Text("Iman Abarkane",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 23,
+                  color: Color.fromARGB(255, 200, 218, 250))),
+          SizedBox(
+            width: 77,
+          ),
+          Container(
+            height: 60,
+            width: 60,
+            color: Colors.green,
+            child: IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          Etudiant_details()), // Remplacez EtudiantDetails() par la page de destination
+                );
+              },
+              icon: Icon(Icons.arrow_forward),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Expanded(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -100,9 +133,4 @@ class Etudiant_card extends StatelessWidget {
                 ),
               ],
             ),
-          ),
-        ],
-      ),
-    );
-  }
-}
+          ),*/

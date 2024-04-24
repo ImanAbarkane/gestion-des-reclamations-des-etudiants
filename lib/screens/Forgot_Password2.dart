@@ -2,7 +2,11 @@
 
 // ignore_for_file: sized_box_for_whitespace, prefer_const_constructors
 
+<<<<<<< HEAD
 
+=======
+import 'package:ereclamation_application_2/screens/Application%20enseignant/espace_enseignant2.dart';
+>>>>>>> imane
 import 'package:flutter/material.dart';
 class ForgotPassword extends StatelessWidget {
   const ForgotPassword({super.key});
@@ -29,7 +33,11 @@ class ForgotPassword extends StatelessWidget {
         body:Column(
           children: [
             
+<<<<<<< HEAD
               Image.asset("images/image6.png"),
+=======
+            
+>>>>>>> imane
               SizedBox(
                height: 200,
               ),
@@ -109,12 +117,20 @@ class ForgotPassword extends StatelessWidget {
                       ),
                       ),
                       TextButton(
+<<<<<<< HEAD
                         onPressed: (){/*Navigator.pushReplacement(      // quand je click sur sign up  il va me donner la âge sign in 
+=======
+                        onPressed: (){Navigator.pushReplacement(      // quand je click sur sign up  il va me donner la âge sign in 
+>>>>>>> imane
                             context, 
                              MaterialPageRoute(builder: (context) =>const SignInEnseignant()
                               
                              ),
+<<<<<<< HEAD
                             );*/},
+=======
+                            );},
+>>>>>>> imane
                          child:   Text(
                           'Sign Up',
                           style: TextStyle(
