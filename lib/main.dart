@@ -9,6 +9,7 @@ import 'package:ereclamation_application_2/screens/admin/Etudiant_details.dart';
 import 'package:ereclamation_application_2/screens/admin/acceuil.dart';
 import 'package:ereclamation_application_2/screens/Application%20etudiant/Forgot_password.dart';
 import 'package:ereclamation_application_2/screens/Application%20etudiant/home.dart';
+import 'package:ereclamation_application_2/screens/admin/liste_reclamations.dart';
 import 'package:ereclamation_application_2/screens/welcome.dart';
 
 import 'package:flutter/material.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         
       ),
       debugShowCheckedModeBanner: false,
-      home:ForgotPassword(),
+      home:ListeReclamations(),
     );
   }
 } 

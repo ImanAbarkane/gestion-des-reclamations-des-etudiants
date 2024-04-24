@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables, camel_case_types
 
+import 'package:ereclamation_application_2/screens/admin/acceuil.dart';
 import 'package:flutter/material.dart';
 
 class Etudiant_details extends StatelessWidget {
@@ -15,8 +16,8 @@ class Etudiant_details extends StatelessWidget {
           decoration: BoxDecoration(
               gradient: LinearGradient(
             colors: [
-              Color.fromRGBO(4, 9, 35, 1),
-              Color.fromRGBO(97, 129, 161, 1),
+              Color.fromRGBO(97, 137, 209, 1),
+              Color.fromRGBO(248, 206, 253, 1),
             ],
             begin: FractionalOffset.bottomCenter,
             end: FractionalOffset.topCenter,
@@ -34,17 +35,22 @@ class Etudiant_details extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          AcceuilAdmin()), // Remplacez EtudiantDetails() par la page de destination
+                );
+                          },
                           icon: Icon(
                             Icons.arrow_back,
                             color: Colors.white,
                           )),
-                      IconButton(
-                          onPressed: () {},
-                          icon: Icon(
-                            Icons.verified_user_outlined,
-                            color: Colors.white,
-                          )),
+                     ElevatedButton(
+                      onPressed: (){},
+                      child: Text("Vérifier")
+                      )
                     ],
                   ),
 
@@ -102,7 +108,7 @@ class Etudiant_details extends StatelessWidget {
                               ],
                             ),
                             decoration: BoxDecoration(
-                              color: Colors.grey,
+                              color: Color.fromARGB(255, 238, 220, 248),
                               borderRadius: BorderRadius.circular(30),
                             ),
                           ),
@@ -112,7 +118,7 @@ class Etudiant_details extends StatelessWidget {
                           Container(
                             height: 60,
                             decoration: BoxDecoration(
-                              color: Colors.grey,
+                              color:Color.fromARGB(255, 238, 220, 248),
                               borderRadius: BorderRadius.circular(30),
                             ),
                             child: Row(
@@ -130,7 +136,7 @@ class Etudiant_details extends StatelessWidget {
                           Container(
                             height: 60,
                             decoration: BoxDecoration(
-                              color: Colors.grey,
+                              color: Color.fromARGB(255, 238, 220, 248),
                               borderRadius: BorderRadius.circular(30),
                             ),
                             child: Row(
@@ -148,7 +154,7 @@ class Etudiant_details extends StatelessWidget {
                           Container(
                             height: 60,
                             decoration: BoxDecoration(
-                              color: Colors.grey,
+                              color: Color.fromARGB(255, 238, 220, 248),
                               borderRadius: BorderRadius.circular(30),
                             ),
                             child: Row(

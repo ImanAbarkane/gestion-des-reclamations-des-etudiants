@@ -3,15 +3,22 @@
 import 'package:ereclamation_application_2/screens/admin/Etudiant_details.dart';
 import 'package:flutter/material.dart';
 
-class AcceuilEnseignant extends StatelessWidget {
-  const AcceuilEnseignant({super.key});
+class AcceuilAdmin extends StatelessWidget {
+  const AcceuilAdmin({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Center(child: Text("Acceuil")),
-          backgroundColor: Colors.red,
+          title: Center(
+            child: Text("Acceuil",
+            style: TextStyle(
+              fontSize: 40,
+              color: Color.fromARGB(255, 16, 51, 126)
+            )
+            ),
+          ),
+          backgroundColor: Color.fromRGBO(89, 139, 231, 1),
         ),
         body: Etudiant_card(),
         bottomNavigationBar: navigatorbar_fonction());
@@ -23,17 +30,21 @@ NavigationBar navigatorbar_fonction() {
     height: 70,
     destinations: [
       NavigationDestination(
-          icon: Icon(Icons.check_circle_outline_outlined),
+          icon: Icon(
+            Icons.check_circle_outline_outlined,
+            color:Color.fromARGB(255, 16, 47, 105),
+            ),
+
           selectedIcon: Icon(Icons.groups),
           label: 'Etudiants'),
       NavigationDestination(
-          icon: Icon(Icons.check_circle_outline_outlined),
+          icon: Icon(Icons.check_circle_outline_outlined,color:Color.fromARGB(255, 16, 47, 105)),
           selectedIcon: Icon(Icons.check_circle),
           label: 'Reclamations'),
       NavigationDestination(
-          icon: Icon(Icons.account_circle),
+          icon: Icon(Icons.account_circle,color:Color.fromARGB(255, 16, 47, 105)),
           selectedIcon: Icon(Icons.account_circle),
-          label: 'Profile'),
+          label: 'Profile',),
     ],
   );
 }
@@ -47,7 +58,16 @@ class Etudiant_card extends StatelessWidget {
       margin: EdgeInsets.all(30),
       height: 60,
       decoration: BoxDecoration(
-          color: Colors.blueAccent, borderRadius: BorderRadius.circular(9)),
+        //color: Colors.pink[100],
+         gradient: LinearGradient(
+            colors: [
+              Color.fromRGBO(89, 139, 231, 1),
+              Color.fromRGBO(255, 255, 255, 1),
+            ],
+            begin: FractionalOffset.bottomLeft,
+            end: FractionalOffset.topRight,
+          )
+         ),
       child: Row(
         children: [
           SizedBox(
@@ -61,14 +81,14 @@ class Etudiant_card extends StatelessWidget {
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 23,
-                  color: Color.fromARGB(255, 200, 218, 250))),
+                  color: Color.fromARGB(255, 81, 109, 156))),
           SizedBox(
-            width: 77,
+            width:50,
           ),
           Container(
             height: 60,
-            width: 60,
-            color: Colors.green,
+            width: 70,
+            color: Color.fromARGB(255, 213, 221, 243),
             child: IconButton(
               onPressed: () {
                 Navigator.push(
