@@ -3,14 +3,17 @@
 import 'package:ereclamation_application_2/models/cas_utilisation.dart';
 import 'package:ereclamation_application_2/screens/Application%20enseignant/espace_enseignant.dart';
 import 'package:ereclamation_application_2/screens/Application%20enseignant/espace_enseignant2.dart';
+import 'package:ereclamation_application_2/screens/Application%20etudiant/AjouterReclamation.dart';
 import 'package:ereclamation_application_2/screens/Forgot_Password2.dart';
 import 'package:ereclamation_application_2/screens/Welcome2.dart';
 import 'package:ereclamation_application_2/screens/admin/Etudiant_details.dart';
 import 'package:ereclamation_application_2/screens/admin/acceuil.dart';
 import 'package:ereclamation_application_2/screens/Application%20etudiant/Forgot_password.dart';
-import 'package:ereclamation_application_2/screens/Application%20etudiant/home.dart';
+import 'package:ereclamation_application_2/screens/Application%20etudiant/homeEtudiant.dart';
 import 'package:ereclamation_application_2/screens/admin/liste_reclamations.dart';
 import 'package:ereclamation_application_2/screens/welcome.dart';
+import 'package:ereclamation_application_2/widgets/Home_Body.dart';
+import 'package:ereclamation_application_2/widgets/home2.dart';
 
 import 'package:flutter/material.dart';
 void main() async {
@@ -31,7 +34,7 @@ class MyApp extends StatelessWidget {
         
       ),
       debugShowCheckedModeBanner: false,
-      home:ListeReclamations(),
+      home:AjouterReclamation(),
     );
   }
 } 

@@ -20,7 +20,7 @@ class Home2 extends StatelessWidget {
     borderRadius: BorderRadius.circular(20),
   ),
   height: 250,
-  child:Image.asset("images/anonce.png",fit: BoxFit.cover,)
+ // child:Image.asset("images/anonce.png",fit: BoxFit.cover,)
 ),
 
           SizedBox(height: 20),
@@ -30,7 +30,7 @@ class Home2 extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(left: 18,right: 18),
             decoration: BoxDecoration(
-              color: Color.fromARGB(255, 160, 163, 165),
+              color: Color.fromARGB(255, 243, 204, 243),
               borderRadius: BorderRadius.circular(20),
             ),
             height: 50,
@@ -38,8 +38,8 @@ class Home2 extends StatelessWidget {
             child: TextField(
               decoration: InputDecoration(
                 hintText: 'Rechercher...',
-                hintStyle: TextStyle(color: Colors.white),
-                icon: Icon(Icons.search, color: Colors.white),
+                hintStyle: TextStyle(color: Color.fromARGB(255, 99, 161, 255)),
+                icon: Icon(Icons.search, color: Color.fromARGB(255, 99, 161, 255)),
                 border: InputBorder.none,
               ),
               style: TextStyle(color: Colors.white),
@@ -115,8 +115,12 @@ class fonction_card extends StatelessWidget {
             width: 400,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              color: Color.fromARGB(
-                  255, 145, 143, 143), // Placeholder pour l'image
+               gradient: LinearGradient(
+           colors: [
+             Color.fromARGB(255, 99, 147, 250),
+             Color.fromARGB(255, 243, 204, 243),
+           ]
+         ) // Placeholder pour l'image
             ),
             child: Column(
               children: [

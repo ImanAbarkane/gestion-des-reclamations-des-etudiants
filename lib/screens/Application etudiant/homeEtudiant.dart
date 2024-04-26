@@ -50,20 +50,32 @@ class Home extends StatelessWidget {
 
   AppBar homeAppBar() {
     return AppBar(
-      backgroundColor:  Colors.blue,
-       title: Center(child: Text('Acceuil')),
+      backgroundColor:  Color.fromARGB(255, 150, 207, 245),
+       title: Center(
+        child: Text(
+        'Acceuil',
+        style: TextStyle(
+          fontSize: 35,
+          color: const Color.fromARGB(255, 255, 255, 255)
+        ),
+
+       )),
        actions: [
         IconButton(
           onPressed: (){}, 
           icon: Icon(
             Icons.notifications,
+            color: Colors.white,
            )
           ),
         
        ],
        leading: IconButton(
         onPressed: (){}, 
-        icon:Icon(Icons.menu)
+        icon:Icon(
+          Icons.menu,
+          color: Colors.white,
+          )
         ),
     );
   }

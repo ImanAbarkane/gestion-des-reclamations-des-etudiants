@@ -7,7 +7,7 @@ class Reclamation {
   String nomEtudiant;
   String nomEnseignant;
   String status;
-  String description;
+  String sujet;
   DateTime date;
 
   Reclamation({
@@ -15,7 +15,7 @@ class Reclamation {
     required this.nomEtudiant,
     required this.nomEnseignant,
     required this.status,
-    required this.description,
+    required this.sujet,
     required this.date,
   });
 }
@@ -25,7 +25,23 @@ List<Reclamation> reclamations = [
     nomEtudiant: "iman abarkane",
     nomEnseignant: "abdounnn haqir",
     status: "En attente", // Remplacez "status" par une valeur appropriée
-    description: "Description de la réclamation", // Remplacez "description" par une valeur appropriée
+    sujet: "Vérification de note ", // Remplacez "description" par une valeur appropriée
+    date: DateTime.now(), // Remplacez "date" par une valeur appropriée
+  ),
+  Reclamation(
+    id: 2,
+    nomEtudiant: "nohqd elkhattabi ",
+    nomEnseignant: "hibaoui nmi",
+    status: "En attente", // Remplacez "status" par une valeur appropriée
+    sujet: "Vérification de note", // Remplacez "description" par une valeur appropriée
+    date: DateTime.now(), // Remplacez "date" par une valeur appropriée
+  ),
+  Reclamation(
+    id: 3,
+    nomEtudiant: "abdelkrim elkhattabi ",
+    nomEnseignant: "mhouti zayn",
+    status: "En attente", // Remplacez "status" par une valeur appropriée
+    sujet: "Consultation de coupie", // Remplacez "description" par une valeur appropriée
     date: DateTime.now(), // Remplacez "date" par une valeur appropriée
   ),
 ];
